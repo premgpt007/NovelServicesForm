@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Novell Services Login</title>
+</head>
+<body>
+    <h1>Novell Services Login</h1>
+    <form action="action_page.php">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="John Doe"><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="********"><br><br>
+        
+        <label for="city">City of Employment:</label>
+        <input type="text" id="city" name="city" placeholder="Los Angeles"><br><br>
+        
+        <label for="server">Web server:</label>
+        <select id="server" name="server">
+            <option value="choose">Choose a server</option>
+            <option value="server1">Server 1</option>
+            <option value="server2">Server 2</option>
+        </select><br><br>
+        
+        <label>Please specify your role:</label><br>
+        <input type="radio" id="admin" name="role" value="admin">
+        <label for="admin">Admin</label>
+        
+        <input type="radio" id="engineer" name="role" value="engineer">
+        <label for="engineer">Engineer</label>
+        
+        <input type="radio" id="manager" name="role" value="manager">
+        <label for="manager">Manager</label>
+        
+        <input type="radio" id="guest" name="role" value="guest">
+        <label for="guest">Guest</label><br><br>
+        
+        <label>Single Sign-on to the following:</label><br>
+        <input type="checkbox" id="mail" name="single_signon" value="mail">
+        <label for="mail">Mail</label><br>
+        
+        <input type="checkbox" id="payroll" name="single_signon" value="payroll">
+        <label for="payroll">Payroll</label><br>
+        
+        <input type="checkbox" id="self_service" name="single_signon" value="self_service">
+        <label for="self_service">Self-service</label><br><br>
+        
+        <input type="submit" value="Login">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
